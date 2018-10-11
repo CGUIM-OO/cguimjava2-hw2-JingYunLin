@@ -121,10 +121,7 @@ class Card{
 	//TODO: 1. Please implement the printCard method (20 points, 10 for suit, 10 for rank)
 	public void printCard(){
 		//Hint: print (System.out.println) card as suit,rank, for example: print 1,1 as Clubs Ace
-		String SuitArray[] = {"Clubs","Diamonds","Hearts","Spades"};
-		String RankArray[] = {"Ace","2","3","4","5","6","7","8","9","10","J","Q","K"};
-		
-		System.out.println(SuitArray[suit-1]+","+RankArray[rank-1]);
+	System.out.println(getSuit()+","+getRank());
 	}
 	public int getSuit(){
 		return suit;
